@@ -1,13 +1,13 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] border:, margin:, and padding: 
-[  ] Three Images
+[x] <div> and <span>
+[x] border:, margin:, and padding: 
+[x] Three Images
 
 Select TWO Additional Features to Add  
-[ no ] Feature 1 - Flexbox
+[x] Feature 1 - Flexbox
 [ no ] Feature 2 - Flip Card
-[ no ] Feature 3 - Animation
+[x] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
 [ no ] Feature 5 - Use a .Gif
 [ no ] Feature 6 - Unique Border Styles
@@ -18,12 +18,30 @@ Select TWO Additional Features to Add
 <html>
 
 <head>
-  <title>Unit 5 Project</title>
+  <title>Chiikawa Unofficial Mini Site</title>
   <meta charset="utf-8">
+  <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/6670add926f2a64cd00fb0e7/80d782d8-d448-4ef0-9439-9f5a2783a7f4/Chii+button.png?format=500w">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
   <style>
+
+body, hmtl{
+    animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange{
+    0%{background-color: rgb (245, 155, 173);}
+    50%{background-color: rgb(231, 111, 131);}
+    100%{background-color: rgb(204, 83, 103);}
+}
+
+h1{
+  font-size: 100px;
+  color:rgb(255, 255, 255);
+   text-shadow: 0px 10px 2px rgba(0, 0, 0);
+}
+
    .chango-regular {
   font-family: "Chango", sans-serif;
   font-weight: 400;
@@ -36,6 +54,9 @@ body{
 }
 
 .chiikawa{
+  border: 6px ridge rgb(204, 83, 103);
+  margin: 40px;
+  padding-left: 50px;
   background-color: rgb(231, 111, 131);
   display: flex;
   justify-content: space-around;
@@ -45,7 +66,7 @@ body{
 .chiikawa-para{
   font-family: Comic Sans MS;
   font-size: large;
- width: 70%;
+ width: 45%;
  height: 150px;
  overflow:auto;
  background-color: rgba(122, 0, 37, 0.199);
@@ -58,6 +79,30 @@ body{
   align-items: center;
 }
 
+.pics-2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pics-3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hachi{
+color: rgb(36, 50, 173);
+}
+
+.usagi{
+  color: rgb(255, 218, 98);
+}
+
+#picstotal{
+  background-color: rgba(165, 42, 42, 0.164);
+}
+
   </style>
 </head>
 <body>
@@ -65,17 +110,29 @@ body{
  <h1 class="chango-regular">CHIIKAWA</h1>
 <br><br><br><br><br><br>
 <div class="chiikawa"><img src="https://images.squarespace-cdn.com/content/v1/6670add926f2a64cd00fb0e7/7828ba38-8302-4215-b4e9-2873c2a27ecc/characters+chiikawa+phonetic+and+name+copy.png?format=750w">
- <p class="chiikawa-para">Chiikawa is gentle, sweet, and kind. Cautious to step out of their comfort zone, and somewhat shy, Chiikawa often gets nervous which usually results in anxious tears. Thankfully, best friends Hachiware and Usagi always has this cute and small creature’s back. Chiikawa lives in a fantasy world filled with some similarities to ours. Inhabitants love food, they exercise, and they go to work and earn money to buy things just like we do. Everyone in Chiikawa’s world works for a living. Knights dressed in armor assign duties including the popular job of weeding. When you pass the weeding exam, you can earn more money and buy more things. Another popular job is hunting, because monsters sometimes mysteriously appear and need to be banished before they can wreak havoc. Chiikawa’s closest friends are Hachiware and Usagi. Together, Chiikawa, Hachiware, and Usagi have good days and bad days, just like us. They laugh, they cry, they dance. As caring best friends, they lift each other up. And they always try to find the fun in any situation. Chiikawa comes from the Japanese phrase "Nanka Chiisakute Kawaii Yatsu" meaning “something small and cute”.  Chiisai means small, and kawaii means cute. Put them together and you get Chiikawa!  </p></div>
+ <p class="chiikawa-para">Chiikawa is gentle, sweet, and kind. Cautious to step out of their comfort zone, and somewhat shy, Chiikawa often gets nervous which usually results in anxious tears. Thankfully, best friends <span class="hachi">Hachiware</span> and <span class="usagi">Usagi</span> always has this cute and small creature’s back. Chiikawa lives in a fantasy world filled with some similarities to ours. Inhabitants love food, they exercise, and they go to work and earn money to buy things just like we do. Everyone in Chiikawa’s world works for a living. Knights dressed in armor assign duties including the popular job of weeding. When you pass the weeding exam, you can earn more money and buy more things. Another popular job is hunting, because monsters sometimes mysteriously appear and need to be banished before they can wreak havoc. Chiikawa’s closest friends are Hachiware and Usagi. Together, Chiikawa, Hachiware, and Usagi have good days and bad days, just like us. They laugh, they cry, they dance. As caring best friends, they lift each other up. And they always try to find the fun in any situation. Chiikawa comes from the Japanese phrase "Nanka Chiisakute Kawaii Yatsu" meaning “something small and cute”.  Chiisai means small, and kawaii means cute. Put them together and you get Chiikawa!  </p></div>
 <br><br>
+
+<div id="picstotal">
 <div class="pics">
  <img src="https://i.pinimg.com/736x/7f/99/d3/7f99d389a599ce0da9382b697269e1e1.jpg" width="472">
  <img src="https://res.klook.com/image/upload/c_crop,h_750,w_1200,x_0,y_89,z_0.5/w_750,h_469,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/tieelp5srxuzhhgek6f1.jpg">
  <img src="https://static.wikia.nocookie.net/chiikawa/images/2/2c/AdorableCutieChiikawa.png/revision/latest?cb=20240709065538">
- <img src="https://chiikawa-merch.com/cdn/shop/articles/how_old_is_Chiikawa.jpg?v=1747751272">
- <img src="https://www.supercutekawaii.com/wp-content/uploads/407249942_861647552307348_843465-481x600.jpg">
- <img src="https://www.cleveridiots.com/wp-content/uploads/chiikawa-wholesale-characters-1024x388.png">
- <img src="https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZ2TNigHZyVgrzfrSMCqdSJnaLiPQnUhYRBNbsUFK26v88ZbO2kMrQuYuuZGcrwvbBsFXxsH0ojXWTVBRRzSRURzU8xdfyMbg1Ey.jpg?r=936">
 </div>
+<br><br>
+
+<div class="pics-2">
+<img src="https://chiikawa-merch.com/cdn/shop/articles/how_old_is_Chiikawa.jpg?v=1747751272" height="300">
+ <img src="https://www.supercutekawaii.com/wp-content/uploads/407249942_861647552307348_843465-481x600.jpg">
+ <img src="https://www.cleveridiots.com/wp-content/uploads/chiikawa-wholesale-characters-1024x388.png" width="600">
+ </div>
+ <br><br>
+
+ <div class="pics-3">
+<img src="https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZ2TNigHZyVgrzfrSMCqdSJnaLiPQnUhYRBNbsUFK26v88ZbO2kMrQuYuuZGcrwvbBsFXxsH0ojXWTVBRRzSRURzU8xdfyMbg1Ey.jpg?r=936" width="1000">
+</div>
+</div>
+<br><br>
  
 <p>Learn more about these characters <a href="https://www.chiikawaofficial.com/">here!</a></p>
 </body>
